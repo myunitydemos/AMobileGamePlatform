@@ -1,4 +1,3 @@
--- 定义全局模块
 main = {}
 
 local init = function()

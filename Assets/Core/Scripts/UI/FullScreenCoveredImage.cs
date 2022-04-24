@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FullScreenBackgroundImage : MonoBehaviour
+public class FullScreenCoveredImage : MonoBehaviour
 {
     public bool AdjustOnce = true;
     Image _image;

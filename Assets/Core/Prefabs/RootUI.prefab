@@ -175,7 +175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2105570076211902586}
   m_Layer: 0
-  m_Name: UIRoot
+  m_Name: RootUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,7 +189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6673041451572400043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 520.24396, y: 26.177574, z: -1020.84705}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9169390676217893127}
