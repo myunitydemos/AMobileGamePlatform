@@ -6,6 +6,6 @@ public class GameLauncher : MonoBehaviour
 {
     public void LaunchGame()
     {
-        EventManager.Instance.Emit(GlobalEvent.EnterGame, "Chess");
+        MessageManager.Dispatch<string>("EnterGame", "Chess");
     }
 }

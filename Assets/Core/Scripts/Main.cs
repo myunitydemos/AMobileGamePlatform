@@ -11,7 +11,7 @@ public class Main : UnitySingleton<Main>
         gameObject.AddComponent<UIManager>();
         gameObject.AddComponent<GamesManager>();
         gameObject.AddComponent<LuaManager>();
-        gameObject.AddComponent<EventManager>();
+        gameObject.AddComponent<MessageManager>();
     }
     // Start is called before the first frame update
     void Start()
@@ -28,9 +28,8 @@ public class Main : UnitySingleton<Main>
     {
         yield return this.StartCoroutine(this.CheckUpdate());
         LuaManager.Instance.InitLua();
-        EventManager.Instance.InitEvent();
         UIManager.Instance.EnterGame("Lobby");
-        EventManager.Instance.AddListener(GlobalEvent.EnterGame, EnterGame);
+        MessageManager.AddHandler<string>("EnterGame", EnterGame);
     }
 
     public void EnterGame(string game)
